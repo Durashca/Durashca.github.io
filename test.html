@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        nav {
+  background: #1c1b1b;
+  padding: 6px 36px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-keponsive: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.keponsive{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.keponsive:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #10b9b9;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.keponsive:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.sekoune {
+  flex: 1;
+  color: #f1eded;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+  padding: 5px 30px;
+  }
+  nav ul li.keponsive{
+  width: 100%;
+  display: none;
+  }
+  nav ul li.keponsive.show{
+  display: block;
+  }
+  nav ul li.btn{
+  display: block;
+  }
+  nav ul li.keponsive:hover{
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #26dddd,
+  inset 0 0 10px #6aebeb;
+  }
+  nav ul li.keponsive:hover:after{
+  opacity: 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li class="sekoune"><img style="width: 50%;height: 30%;" src="src/images/icon/iconW_without_background.png"></li>
+        <li class="keponsive"><a href="#">Главная</a></li>
+        <li class="keponsive"><a href="#">Скрипты</a></li>
+        <li class="keponsive"><a href="#">Форум</a></li>
+        <li class="keponsive"><a href="#">Статьи</a></li>
+        <li class="keponsive"><a href="#">Контакты</a></li>
+        <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+        </nav>
+      
+<script>
+    $(document).ready(function(){
+  $('.btn').click(function(){
+  $('.keponsive').toggleClass("show");
+  $('ul li').toggleClass("hide");
+  });
+});
+</script>
+</body>
+</html>

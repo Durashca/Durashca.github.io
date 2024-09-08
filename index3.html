@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Сайт где вы сможите найти шаблонники php">
+    <meta name="keywords" content="WseProIT, все про it, сайт it">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css/bootstrapp/bootstrapp.css">
+    <script src="src/js/bootstrap/bootstrapp.js"></script>
+    <link rel="stylesheet" href="src/css/index/menu.css">
+    
+   
+    
+    <style>
+
+
+        body {
+            margin: 0; /* Удалите или измените это свойство для разрешения прокрутки */
+        }
+        
+        .MainContent {
+            color: #ffffff;
+            font-family:  "Montserrat", sans-serif;
+            display: inline;
+            text-decoration: none;
+            opacity: 0; /* Начальное состояние невидимо */
+            transform: translateY(-20px); /* Сдвигаем элементы вверх */
+            animation: fadeInUp 1s ease-out forwards; /* Анимация */
+            /* font-size: 2.5rem; */
+        }
+        /* .MainContent > h3 {
+            font-size: 2.8rem;
+        } */
+
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Установите высоту в 100% viewport */
+            overflow: hidden; /* Скрывает любой контент, выходящий за пределы контейнера */
+        }
+        #imgBackground {
+            border-radius: 0;
+            border: 0;
+            width: 100%;
+            height: 100%; /* Установите высоту в 100% */
+            object-fit: cover; /* Заполняет контейнер, сохраняя пропорции */
+            filter: brightness(70%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0; /* Поместите изображение за содержимым */
+        }
+        #content {
+            position: absolute;
+            top: 36%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            z-index: 1; 
+        }
+        
+        /*анимация */
+        #content p {
+            animation-delay: 2s;
+        }
+        #content a:nth-of-type(1) {
+            animation-delay: 4s;
+        }
+        #content a:nth-of-type(2) {
+            animation-delay: 6s;
+        }
+        #content a:nth-of-type(3) {
+            animation-delay: 8s;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+   
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class=".container-xxl">    
+<!-- menu -->
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-xxl theme little-dark">
+
+        <a class=" MainMenu navbar-brand" href="#">
+            <img style="width: 104px; height: 36px;" src="src/images/icon/iconW_without_background.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+       
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a id="btnMain" class=" MainMenu nav-link active" aria-current="page" href="index.php">Главная</a>
+        <a id="btnMaterial" class=" MainMenu nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+           aria-controls="offcanvasExample">Материал</a>
+            <!--профиль-->
+            <a  class=" MainMenu nav-link position-relative profile" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Профиль</a>
+                    
+        </div>
+    </div>
+
+</nav>
+
+<!-- menu -->
+ </div>
+
+
+<div class=".container-xxl">
+<!-- img -->
+
+    <div class="image-container">
+    <img id="imgBackground" src="src/images/background_lesson/img2.jpg" alt="Background Image">
+    <div id="content" style="display: grid; justify-content: center; align-content: center;">
+       <h3 class="MainContent">Не хотите пройти курс?</h3>
+        <a class="MainContent" href="index.php">Курс для новичков</a>
+        <a class="MainContent" href="stage_one.html">Курс php</a>
+        <!-- <a class="MainContent" href="#">Курс по Godot</a> -->
+    </div>
+</div>
+
+</div>
+
+
+
+
+  
+<!-- footer -->
+<script src="src/js/add_meta_ico_footer.js"></script>
+</body>
+</html>

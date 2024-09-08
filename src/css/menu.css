@@ -1,0 +1,92 @@
+nav {
+    background: #1c1b1b;
+    padding: 6px 36px;
+    margin-bottom: 35px;
+  }
+  nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-keponsive: center;
+    justify-content: center;
+    padding: 0 5px;
+    align-items: baseline;
+    margin-top: 8px;
+  
+  }
+  nav ul li{
+
+    cursor: pointer;
+  }
+  nav ul li.keponsive{
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+  }
+  nav ul li.keponsive:hover:after{
+    opacity: 1;
+    bottom: 8px;
+  }
+  nav ul li.sekoune {
+    flex: 1;
+    color: #f1eded;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+  }
+  nav ul li:hover a{
+    color: rgb(255, 0, 0);
+  }
+  nav ul li i{
+    font-size: 23px;
+  }
+  nav ul li.btn{
+    display: none;
+  }
+  nav ul li.btn.hide i:before{
+    content: '\f00d';
+  }
+  @media all and (max-width: 900px){
+    nav{
+      padding: 5px;
+    }
+    nav ul li.keponsive{
+    width: 100%;
+    display: none;
+    }
+    nav ul li.keponsive.show{
+    display: block;
+    }
+    nav ul li.btn{
+    display: block;
+    }
+    nav ul li.keponsive:hover{
+    border-radius: 5px;
+     
+    }
+    nav ul li.keponsive:hover:after{
+    opacity: 0;
+    }
+    
+  }
+#iconMenu {
+max-width: 400px;
+width: 150px;
+height: 40px;
+}
+content > img {
+width: 100%;
+max-height: 500px;
+/* border: 2px solid black; */
+border-radius: 10px;
+text-align: center;
+}

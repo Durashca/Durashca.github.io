@@ -1,0 +1,6 @@
+p {
+    font-size: clamp(16px, 13.1830985915px + 0.5633802817vw, 24px);
+    font-weight: 300;
+    
+    line-height: 150%;
+  }
