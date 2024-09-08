@@ -8,12 +8,14 @@
 
 
 <url>
-  <loc>https://durashca.github.io/php_lessons/</loc>
+  <loc>https://durashca.github.io/</loc>
   <lastmod>2024-09-08T11:00:50+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
 </url>
   
 <url>
-  <loc>https://durashca.github.io/php_lessons/stage_one.html</loc>
+  <loc>https://durashca.github.io/stage_one.html</loc>
   <lastmod>2024-09-09T12:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.5</priority>
