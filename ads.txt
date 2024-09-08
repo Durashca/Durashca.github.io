@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 durashca.github.io
 
-=======
-durashca.github.io
-
->>>>>>> bcec2dd6b6d2b3df227fc5edd0dc1882938e9f35
 google.com, pub-3473384405145767, DIRECT, f08c47fec0942fa0
