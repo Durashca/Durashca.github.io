@@ -1,1 +1,1 @@
-Sitemap: <https://durashca.github.io/php_lessons/sitemap.xml>
+Sitemap: <https://durashca.github.io/sitemap.xml>
