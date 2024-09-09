@@ -7,7 +7,7 @@ let ico = document.createElement('link');
 ico.rel = 'icon';
 ico.type = 'image/png';
 ico.sizes = '32x32';
-ico.href = 'src/images/icon/mini_ico_without_text.png';
+ico.href = 'https://durashca.github.io/src/images/icon/mini_ico_without_text.png';
 
 
 let footer_css = document.createElement('link');
