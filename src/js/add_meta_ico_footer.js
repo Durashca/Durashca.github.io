@@ -3,12 +3,6 @@ let meta = document.createElement('meta');
 meta.name = 'viewport';
 meta.content = 'width=device-width, initial-scale=1.0';
 
-let ico = document.createElement('link');
-ico.rel = 'icon';
-ico.type = 'image/png';
-ico.sizes = '32x32';
-ico.href = 'https://raw.githubusercontent.com/durashca/durashca.github.io/main/src/images/icon/mini_ico_without_text.png';
-
 
 let footer_css = document.createElement('link');
 footer_css.rel = "stylesheet";
@@ -71,6 +65,6 @@ let footer_js =
 
 let head = document.querySelector('head');
 head.appendChild(meta);
-head.appendChild(ico);
+
 head.appendChild(footer_css);
 });
