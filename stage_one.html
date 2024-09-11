@@ -12,7 +12,7 @@
     <meta property="og:image:alt" content="сайт шаблоник php">
     <meta property="og:site_name" content="WseProIT">
 
-    <title> WseProIT этап №1</title>
+    <title>ВсеПроИТ этап №1</title>
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -61,7 +61,7 @@
 <!--  -->
     <nav>
         <ul>
-            <li class="sekoune"><h3 id="rgb_text" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">WseProIT</h3></li>
+            <li class="sekoune"><h3 style="font-family: 'Montserrat', sans-serif; font-weight: bold;"><span id="rgb_text" >WseProIT</span></h3></li>
             <li class="keponsive"><a href="index.html">Главная</a></li>
             <li class="keponsive"><a href="#">Скрипты</a></li>
             <li class="keponsive"><a href="#">Форум</a></li>
@@ -235,9 +235,45 @@
           <img src="src/images/stage/image12.png">
 
           <div style="display: flex; justify-content: center; margin: 1% 0;">
-            <a href="stage_two.html">
-              <button type="button" class="btn btn-outline-danger">Перейти к шаблонам</button>
-            </a>
+          <!--  -->
+
+          
+<!-- Кнопка-триггер модального окна -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Запустить модальное окно со статическим фоном
+</button>
+
+
+<div  class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+  <div  class="modal-dialog modal-dialog-centered">
+      <!-- Модальное окно -->
+    <div style="background-color: #1c1b1b;" class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Выберите шаблоны по</h1>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button> -->
+      </div>
+      <div class="modal-body">
+        <ul style="text-decoration: none; list-style-type: none;">
+          <li><a href="the_form_for_sending_comments.html">форма отправки коментариев</a></li>
+          <li><a href="#">форма регистрации</a></li>
+          <li><a href="#">форма </a></li>
+          
+        </ul>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+            <!--  -->
+      
+            
             
           </div>
           <!--  -->

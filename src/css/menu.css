@@ -44,7 +44,7 @@ nav {
     transition: .4s;
   }
   nav ul li:hover a{
-    color: rgb(255, 0, 0);
+    color: rgb(10, 88, 202);
   }
   nav ul li i{
     font-size: 23px;
