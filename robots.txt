@@ -1,1 +1,4 @@
+User -agent: *
+Disallow:
+
 Sitemap: https://durashca.github.io/sitemap.xml
